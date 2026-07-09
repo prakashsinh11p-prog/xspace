@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રોડક્ટ્સ - xspace</title>
+    <style>
+        /* રોયલ થીમ કલર્સ */
+        :root {
+            --royal-blue: #0A2540;
+            --nature-green: #1E5631;
+            --gold-accent: #D4AF37;
+            --clean-white: #FFFFFF;
+            --light-bg: #F4F7F6;
+            --text-dark: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* હેડર અને નેવિગેશન */
+        header {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--gold-accent);
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--gold-accent);
+            font-size: 14px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: var(--clean-white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--gold-accent);
+        }
+
+        #google_translate_element {
+            display: inline-block;
+        }
+
+        /* પેજ ટાઇટલ સેક્શન */
+        .page-title {
+            background-color: var(--nature-green);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid var(--gold-accent);
+        }
+
+        .page-title h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* મુખ્ય કન્ટેનર */
+        .product-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* કેટેગરી હેડિંગ */
+        .category-title {
+            color: var(--royal-blue);
+            font-size: 26px;
+            border-left: 5px solid var(--gold-accent);
+            padding-left: 15px;
+            margin: 40px 0 20px 0;
+            font-weight: bold;
+        }
+
+        /* પ્રોડક્ટ ગ્રીડ */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        /* પ્રોડક્ટ કાર્ડ સ્ટાઇલ */
+        .product-card {
+            background: var(--clean-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            width: calc(25% - 19px);
+            min-width: 260px;
+            overflow: hidden;
+            border: 1px solid #e1e8e5;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        /* પ્રોડક્ટ ઈમેજ પ્લેસહોલ્ડર */
+        .product-img {
+            background-color: #e9f0ec;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--nature-green);
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 3px solid var(--light-bg);
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: var(--royal-blue);
+        }
+
+        .product-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 15px 0;
+            flex-grow: 1;
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .product-status {
+            font-size: 13px;
+            font-weight: bold;
+            color: var(--nature-green);
+            background-color: #e8f5e9;
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        .enquire-btn {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+            border: 1px solid var(--royal-blue);
+        }
+
+        .enquire-btn:hover {
+            background-color: var(--clean-white);
+            color: var(--royal-blue);
+        }
+
+        /* ફૂટર */
+        footer {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 3px solid var(--gold-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- હેડર અને મેનૂ -->
+    <header>
+        <div class="logo">
+            <h1>xspace</h1>
+            <span>Agro, Dairy & Research</span>
+        </div>
+        <nav>
+            <a href="index.html">હોમ</a>
+            <a href="about.html">અમારા વિશે</a>
+            <a href="products.html" class="active">પ્રોડક્ટ્સ</a>
+            <a href="blog-reports.html">બ્લોગ & રિપોર્ટ</a>
+            <a href="#">નેક્સ્ટ</a>
+            <a href="#">સંપર્ક</a>
+        </nav>
+        
+        <!-- ગૂગલ ટ્રાન્સલેટ ડ્રોપડાઉન -->
+        <div id="google_translate_element"></div>
+    </header>
+
+    <!-- પેજ હેડિંગ -->
+    <section class="page-title">
+        <h2>અમારી પ્રોડક્ટ્સ (Products)</h2>
+    </section>
+
+    <!-- મુખ્ય પ્રોડક્ટ સેક્શન -->
+    <main class="product-container">
+        
+        <!-- કેટેગરી ૧: ડેરી પ્રોડક્ટ્સ -->
+        <div class="category-title">પ્રીમિયમ ડેરી ઉત્પાદનો</div>
+        <div class="product-grid">
+            
+            <!-- પ્રોડક્ટ ૧ -->
+            <div class="product-card">
+                <div class="product-img" style="background: #eef5fc; color: var(--royal-blue);">A2 ગીર ગાયનું ઘી</div>
+                <div class="product-info">
+                    <h3>શુદ્ધ A2 બિલરોના ઘી</h3>
+                    <p>પરંપરાગત વૈદિક વલોણા પદ્ધતિથી તૈયાર કરેલું ૧૦૦% શુદ્ધ અને પૌષ્ટિક ગાયનું ઘી.</p>
+                    <div class="product-meta">
+                        <span class="product-status">ઉપલબ્ધ</span>
+                        <a href="#" class="enquire-btn">ઇન્ક્વાયરી</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- પ્રોડક્ટ ૨ -->
+            <div class="product-card">
+                <div class="product-img" style="background: #eef5fc; color: var(--royal-blue);">તાજું દૂધ & માખણ</div>
+                <div class="product-info">
+                    <h3>ઓર્ગેનિક ડેરી મિલ્ક</h3>
+                    <p>કોઈપણ પ્રકારના કેમિકલ કે પ્રિઝર્વેટિવ્સ વગરનું પ્યોર અને તાજું દૂધ.</p>
+                    <div class="product-meta">
+                        <span class="product-status">ઉપલબ્ધ</span>
+                        <a href="#" class="enquire-btn">ઇન્ક્વાયરી</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- કેટેગરી ૨: ખેતીવાડી પ્રોડક્ટ્સ -->
+        <div class="category-title" style="border-left-color: var(--nature-green);">ઓર્ગેનિક કૃષિ ઉત્પાદનો</div>
+        <div class="product-grid">
+            
+            <!-- પ્રોડક્ટ ૩ -->
+            <div class="product-card">
+                <div class="product-img">સેન્દ્રીય અનાજ અને કઠોળ</div>
+                <div class="product-info">
+                    <h3>કુદરતી ઘઉં અને બાજરી</h3>
+                    <p>સંપૂર્ણપણે પ્રાકૃતિક અને ઝેરમુક્ત ખેતી પદ્ધતિથી પકવેલું ઉત્તમ અનાજ.</p>
+                    <div class="product-meta">
+                        <span class="product-status">સીઝનલ</span>
+                        <a href="#" class="enquire-btn">ઇન્ક્વાયરી</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- પ્રોડક્ટ ૪ -->
+            <div class="product-card">
+                <div class="product-img">પ્રાકૃતિક ખાતર (Organic Fertilizer)</div>
+                <div class="product-info">
+                    <h3>જીવામૃત અને અળસિયાનું ખાતર</h3>
+                    <p>જમીનની ફળદ્રુપતા અને પાકની ગુણવત્તા વધારવા માટેનું બેસ્ટ ઓર્ગેનિક ખાતર.</p>
+                    <div class="product-meta">
+                        <span class="product-status">ઉપલબ્ધ</span>
+                        <a href="#" class="enquire-btn">ઇન્ક્વાયરી</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ફૂટર -->
+    <footer>
+        <p>&copy; 2026 xspace. સર્વાધિકાર સુરક્ષિત.</p>
+    </footer>
+
+    <!-- ગૂગલ ટ્રાન્સલેટ સ્ક્રિપ્ટ લિંક -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'gu', 
+                includedLanguages: 'gu,en,hi', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
