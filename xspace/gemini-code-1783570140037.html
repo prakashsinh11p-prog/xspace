@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંપર્ક - xspace</title>
+    <style>
+        /* રોયલ થીમ કલર્સ */
+        :root {
+            --royal-blue: #0A2540;
+            --nature-green: #1E5631;
+            --gold-accent: #D4AF37;
+            --clean-white: #FFFFFF;
+            --light-bg: #F4F7F6;
+            --text-dark: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* હેડર અને નેવિગેશન */
+        header {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--gold-accent);
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--gold-accent);
+            font-size: 14px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: var(--clean-white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--gold-accent);
+        }
+
+        #google_translate_element {
+            display: inline-block;
+        }
+
+        /* પેજ ટાઇટલ સેક્શન */
+        .page-title {
+            background-color: var(--nature-green);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid var(--gold-accent);
+        }
+
+        .page-title h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* મુખ્ય કન્ટેનર ગ્રીડ */
+        .contact-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* ડાબી બાજુ - સંપર્ક વિગતો */
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: var(--clean-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--royal-blue);
+        }
+
+        .contact-info h3 {
+            color: var(--royal-blue);
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item strong {
+            color: var(--nature-green);
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* જમણી બાજુ - ફોર્મ */
+        .contact-form-box {
+            flex: 1.5;
+            min-width: 350px;
+            background: var(--clean-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--gold-accent);
+        }
+
+        .contact-form-box h3 {
+            color: var(--royal-blue);
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .submit-btn {
+            background-color: var(--nature-green);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--royal-blue);
+        }
+
+        /* ફૂટર */
+        footer {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 3px solid var(--gold-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- હેડર અને મેનૂ -->
+    <header>
+        <div class="logo">
+            <h1>xspace</h1>
+            <span>Agro, Dairy & Research</span>
+        </div>
+        <nav>
+            <a href="index.html">હોમ</a>
+            <a href="about.html">અમારા વિશે</a>
+            <a href="products.html">પ્રોડક્ટ્સ</a>
+            <a href="blog-reports.html">બ્લોગ & રિપોર્ટ</a>
+            <a href="next.html">નેક્સ્ટ</a>
+            <a href="contact.html" class="active">સંપર્ક</a>
+        </nav>
+        
+        <!-- ગૂગલ ટ્રાન્સલેટ ડ્રોપડાઉન -->
+        <div id="google_translate_element"></div>
+    </header>
+
+    <!-- પેજ હેડિંગ -->
+    <section class="page-title">
+        <h2>અમારો સંપર્ક કરો (Contact Us)</h2>
+    </section>
+
+    <!-- મુખ્ય કન્ટેન્ટ કન્ટેનર -->
+    <main class="contact-container">
+        
+        <!-- ડાબો ભાગ: વિગતો -->
+        <div class="contact-info">
+            <h3>સંપર્ક માહિતી</h3>
+            
+            <div class="info-item">
+                <strong>📍 મુખ્ય કાર્યાલય (સરનામું):</strong>
+                <p>હિંમતનગર, સાબરકાંઠા, ગુજરાત.</p>
+            </div>
+
+            <div class="info-item">
+                <strong>📞 ફોન નંબર:</strong>
+                <p>+91 XXXXX XXXXX</p>
+            </div>
+
+            <div class="info-item">
+                <strong>✉️ ઈમેલ આઈડી:</strong>
+                <p>info@xspace.com</p>
+            </div>
+
+            <div class="info-item">
+                <strong>⏰ સમય:</strong>
+                <p>સોમવાર થી શનિવાર: સવારે ૯ થી સાંજે ૬</p>
+            </div>
+        </div>
+
+        <!-- જમણો ભાગ: ફોર્મ -->
+        <div class="contact-form-box">
+            <h3>સંદેશો મોકલો</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">તમારું નામ:</label>
+                    <input type="text" id="name" name="name" placeholder="પૂરું નામ લખો" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">મોબાઇલ નંબર:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="૧૦ આંકડાનો નંબર" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">વિષય:</label>
+                    <input type="text" id="subject" name="subject" placeholder="કઈ બાબતે સંપર્ક કરવો છે?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">તમારો સંદેશ/પ્રશ્ન:</label>
+                    <textarea id="message" name="message" placeholder="તમારી વિગત અહીં લખો..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">સંદેશ મોકલો</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- ફૂટર -->
+    <footer>
+        <p>&copy; 2026 xspace. સર્વાધિકાર સુરક્ષિત.</p>
+    </footer>
+
+    <!-- ગૂગલ ટ્રાન્સલેટ સ્ક્રિપ્ટ લિંક -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'gu', 
+                includedLanguages: 'gu,en,hi', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

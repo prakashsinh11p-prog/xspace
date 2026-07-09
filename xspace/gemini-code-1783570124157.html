@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નેક્સ્ટ પ્રોજેક્ટ્સ - xspace</title>
+    <style>
+        /* રોયલ થીમ કલર્સ */
+        :root {
+            --royal-blue: #0A2540;
+            --nature-green: #1E5631;
+            --gold-accent: #D4AF37;
+            --clean-white: #FFFFFF;
+            --light-bg: #F4F7F6;
+            --text-dark: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* હેડર અને નેવિગેશન */
+        header {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--gold-accent);
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--gold-accent);
+            font-size: 14px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: var(--clean-white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--gold-accent);
+        }
+
+        #google_translate_element {
+            display: inline-block;
+        }
+
+        /* પેજ ટાઇટલ સેક્શન */
+        .page-title {
+            background-color: var(--nature-green);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid var(--gold-accent);
+        }
+
+        .page-title h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* મુખ્ય કન્ટેનર */
+        .next-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* આગામી પ્રોજેક્ટ કાર્ડ્સ */
+        .upcoming-card {
+            background: var(--clean-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            border-left: 6px solid var(--gold-accent);
+            transition: transform 0.3s;
+        }
+
+        .upcoming-card:hover {
+            transform: translateX(5px);
+        }
+
+        .project-tag {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background-color: #fef9e7;
+            color: #b7950b;
+            border: 1px solid var(--gold-accent);
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .upcoming-card h3 {
+            color: var(--royal-blue);
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            max-width: 80%;
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            background-color: var(--royal-blue);
+            color: white;
+            font-size: 13px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .upcoming-card p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+
+        /* ફૂટર */
+        footer {
+            background-color: var(--royal-blue);
+            color: var(--clean-white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 3px solid var(--gold-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- હેડર અને મેનૂ -->
+    <header>
+        <div class="logo">
+            <h1>xspace</h1>
+            <span>Agro, Dairy & Research</span>
+        </div>
+        <nav>
+            <a href="index.html">હોમ</a>
+            <a href="about.html">અમારા વિશે</a>
+            <a href="products.html">પ્રોડક્ટ્સ</a>
+            <a href="blog-reports.html">બ્લોગ & રિપોર્ટ</a>
+            <a href="next.html" class="active">નેક્સ્ટ</a>
+            <a href="#">સંપર્ક</a>
+        </nav>
+        
+        <!-- ગૂગલ ટ્રાન્સલેટ ડ્રોપડાઉન -->
+        <div id="google_translate_element"></div>
+    </header>
+
+    <!-- પેજ હેડિંગ -->
+    <section class="page-title">
+        <h2>આગામી વિઝન અને પ્રોજેક્ટ્સ (Next)</h2>
+    </section>
+
+    <!-- મુખ્ય કન્ટેન્ટ -->
+    <main class="next-container">
+        <p class="intro-text">સતત પ્રગતિ અને નૂતન સંશોધન એ xspace નો મુખ્ય મંત્ર છે. ભવિષ્યમાં અમે કૃષિ, ડેરી અને સામાજિક ઉત્થાન માટે કયા પથ પર આગળ વધી રહ્યા છીએ તેની એક ઝાંખી અહીં પ્રસ્તુત છે.</p>
+
+        <!-- પ્રોજેક્ટ ૧ -->
+        <div class="upcoming-card">
+            <span class="project-tag">સામાજિક અભિયાન</span>
+            <h3>નવું પશુપાલક જાગૃતિ કેન્દ્ર અને ડિજિટલ પ્લેટફોર્મ</h3>
+            <div class="timeline-badge">આગામી પ્રોજેક્ટ</div>
+            <p>પશુપાલકોને ડેરી સેક્ટરના ભ્રષ્ટાચાર, દૂધના સાચા ભાવો અને ગ્રાહકો સાથે સીધા જોડાણ અંગે ડિજિટલ સાક્ષરતા આપવા માટે એક વિશેષ ઓનલાઇન પ્લેટફોર્મ અને ગ્રાઉન્ડ ટ્રેનિંગ સેન્ટરનું આયોજન થઈ રહ્યું છે.</p>
+        </div>
+
+        <!-- પ્રોજેક્ટ ૨ -->
+        <div class="upcoming-card" style="border-left-color: var(--nature-green);">
+            <span class="project-tag" style="background-color: #e8f5e9; color: var(--nature-green); border-color: var(--nature-green);">કૃષિ સંશોધન</span>
+            <h3>સ્માર્ટ ફાર્મિંગ અને ઇનોવેટિવ એગ્રી-ટૂલ્સ</h3>
+            <div class="timeline-badge" style="background-color: var(--nature-green);">આયોજન હેઠળ</div>
+            <p>નાના ખેડૂતો માટે ઓછા ખર્ચે આધુનિક ટેકનોલોજી અને સ્માર્ટ એગ્રીકલ્ચર પદ્ધતિઓ કેવી રીતે અમલમાં મૂકી શકાય, તે અંગેના નવા લાઈવ મોડલ ફાર્મ્સ અને રિસર્ચ રિપોર્ટ્સ પર કામ શરૂ છે.</p>
+        </div>
+
+        <!-- પ્રોજેક્ટ ૩ -->
+        <div class="upcoming-card" style="border-left-color: var(--royal-blue);">
+            <span class="project-tag" style="background-color: #eef5fc; color: var(--royal-blue); border-color: var(--royal-blue);">નવી પ્રોડક્ટ</span>
+            <h3>પ્રીમિયમ ઓર્ગેનિક મસાલા અને વેલ્યુ-એડેડ ડેરી પ્રોડક્ટ્સ</h3>
+            <div class="timeline-badge">ટૂંક સમયમાં લોન્ચ થશે</div>
+            <p>ડેરી ક્ષેત્રે ફ્લેવર્ડ હેલ્ધી મિલ્ક અને ખેતીવાડીમાં શુદ્ધ ઓર્ગેનિક હળદર, મરચું અને ધાણાજીરું જેવા ઉચ્ચ ગુણવત્તાયુક્ત ઉત્પાદનો સીધા બજારમાં લાવવાની તૈયારીઓ અંતિમ તબક્કામાં છે.</p>
+        </div>
+
+    </main>
+
+    <!-- ફૂટર -->
+    <footer>
+        <p>&copy; 2026 xspace. સર્વાધિકાર સુરક્ષિત.</p>
+    </footer>
+
+    <!-- ગૂગલ ટ્રાન્સલેટ સ્ક્રિપ્ટ લિંક -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'gu', 
+                includedLanguages: 'gu,en,hi', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
