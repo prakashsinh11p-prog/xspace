@@ -3,215 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>બ્લોગ અને રિપોર્ટ - xspace</title>
-    <style>
-        /* રોયલ થીમ કલર્સ */
-        :root {
-            --royal-blue: #0A2540;
-            --nature-green: #1E5631;
-            --gold-accent: #D4AF37;
-            --clean-white: #FFFFFF;
-            --light-bg: #F4F7F6;
-            --text-dark: #333333;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        /* હેડર અને નેવિગેશન */
-        header {
-            background-color: var(--royal-blue);
-            color: var(--clean-white);
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 4px solid var(--gold-accent);
-        }
-
-        .logo h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
-            color: var(--gold-accent);
-            font-size: 14px;
-            display: block;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            color: var(--clean-white);
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
-
-        nav a:hover, nav a.active {
-            color: var(--gold-accent);
-        }
-
-        #google_translate_element {
-            display: inline-block;
-        }
-
-        /* પેજ ટાઇટલ સેક્શન */
-        .page-title {
-            background-color: var(--nature-green);
-            color: var(--clean-white);
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 3px solid var(--gold-accent);
-        }
-
-        .page-title h2 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        /* રિસર્ચ એન્ડ સેન્ટ્રલ કન્ટેન્ટ કન્ટેનર */
-        .main-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* ફિલ્ટર અને સર્ચ સેક્શન */
-        .search-filter-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            background: var(--clean-white);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-
-        .search-box input {
-            padding: 10px 15px;
-            width: 250px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        .filter-buttons button {
-            background-color: var(--light-bg);
-            border: 2px solid var(--royal-blue);
-            color: var(--royal-blue);
-            padding: 8px 18px;
-            margin-left: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-
-        .filter-buttons button:hover, .filter-buttons button.active {
-            background-color: var(--royal-blue);
-            color: var(--clean-white);
-        }
-
-        /* બ્લોગ અને રિપોર્ટ ગ્રીડ */
-        .reports-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-        }
-
-        .report-card {
-            background: var(--clean-white);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            width: calc(33.333% - 17px);
-            min-width: 300px;
-            overflow: hidden;
-            border-top: 5px solid var(--royal-blue);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s;
-        }
-
-        .report-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .report-tag {
-            background: var(--nature-green);
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-            padding: 4px 10px;
-            align-self: flex-start;
-            margin: 20px 20px 0 20px;
-            border-radius: 3px;
-        }
-
-        .report-body {
-            padding: 0 20px 20px 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .report-body h3 {
-            color: var(--royal-blue);
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .report-date {
-            font-size: 13px;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .report-body p {
-            font-size: 15px;
-            color: #555;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-
-        .read-btn {
-            background-color: var(--gold-accent);
-            color: var(--royal-blue);
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .read-btn:hover {
-            background-color: #f1c40f;
-        }
-
-        /* ફૂટર */
-        footer {
-            background-color: var(--royal-blue);
-            color: var(--clean-white);
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-            border-top: 3px solid var(--gold-accent);
-        }
-    </style>
+    <title>અમારા વિશે - xspace</title>
+    <link rel="stylesheet" href="style.css"> <!-- જો તમારી CSS ફાઈલનું નામ અલગ હોય તો બદલજો -->
 </head>
 <body>
 
-    <!-- હેડર અને મેનૂ -->
     <header>
         <div class="logo">
             <h1>xspace</h1>
@@ -219,94 +15,28 @@
         </div>
         <nav>
             <a href="index.html">હોમ</a>
-            <a href="about.html">અમારા વિશે</a>
+            <a href="about.html" class="active">અમારા વિશે</a>
             <a href="products.html">પ્રોડક્ટ્સ</a>
-            <a href="blog-reports.html" class="active">બ્લોગ & રિપોર્ટ</a>
-            <a href="next.html">નેક્સ્ટ</a>
+            <a href="blog-reports.html">બ્લોગ & રિપોર્ટ</a>
             <a href="contact.html">સંપર્ક</a>
         </nav>
-        
-        <!-- ગૂગલ ટ્રાન્સલેટ ડ્રોપડાઉન -->
-        <div id="google_translate_element"></div>
     </header>
 
-    <!-- પેજ હેડિંગ -->
     <section class="page-title">
-        <h2>અમારા સંશોધન, લેખો અને અહેવાલો</h2>
+        <h2>અમારા વિશે (About Us)</h2>
     </section>
 
-    <!-- મુખ્ય કન્ટેન્ટ -->
     <main class="main-container">
-        
-        <!-- સર્ચ અને ફિલ્ટર બાર -->
-        <div class="search-filter-section">
-            <div class="search-box">
-                <input type="text" placeholder="રિપોર્ટ શોધો...">
-            </div>
-            <div class="filter-buttons">
-                <button class="active">બધા અહેવાલો</button>
-                <button>સામાજિક જાગૃતિ</button>
-                <button>ડેરી સેક્ટર</button>
-                <button>કૃષિ રિસર્ચ</button>
-            </div>
+        <div class="card">
+            <h3>પરિચય</h3>
+            <p><strong>xspace</strong> એ માત્ર એક વ્યવસાય નથી, પરંતુ પરંપરા, ટેકનોલોજી અને સામાજિક જવાબદારીનો એક અનોખો સંગમ છે. અમે વર્ષોની પરંપરાગત સૂઝબૂઝ અને આધુનિક પદ્ધતિઓનો ઉપયોગ કરીને કૃષિ અને ડેરી ક્ષેત્રે ગુણવત્તાયુક્ત કાર્ય કરી રહ્યા છીએ. વ્યવસાયની સાથે-સાથે ગ્રાઉન્ડ લેવલ રિસર્ચ અને સામાજિક જાગૃતિ લાવવી એ અમારો મુખ્ય ધ્યેય છે.</p>
         </div>
 
-        <!-- રિપોર્ટ્સ અને બ્લોગની ગ્રીડ -->
-        <div class="reports-grid">
-            
-            <!-- કાર્ડ ૧ -->
-            <div class="report-card">
-                <span class="report-tag">ડેરી સેક્ટર</span>
-                <div class="report-body">
-                    <h3>ડેરી ક્ષેત્રે પારદર્શિતા અને પશુપાલકોના અધિકારો</h3>
-                    <div class="report-date">મે ૨૦૨૬</div>
-                    <p>દૂધના ઉત્પાદનથી લઈને કિંમતોના નિર્ધારણમાં રહેલી ત્રુટીઓ અને પશુપાલકોને આર્થિક નુકસાનમાંથી ઉગારવા માટેના સચોટ ગ્રાઉન્ડ રિપોર્ટ્સ અને આંકડાકીય વિશ્લેષણ.</p>
-                    <a href="#" class="read-btn">રિપોર્ટ (PDF) જુઓ</a>
-                </div>
-            </div>
-
-            <!-- કાર્ડ ૨ -->
-            <div class="report-card" style="border-top-color: var(--nature-green);">
-                <span class="report-tag" style="background: var(--royal-blue);">સામાજિક જાગૃતિ</span>
-                <h3>ગ્રામીણ વિસ્તારોમાં બેરોજગારી અને તેના ઉપાયો</h3>
-                <div class="report-body">
-                    <div class="report-date">એપ્રિલ ૨૦૨૬</div>
-                    <p>ગામડાઓમાં યુવાનોને સ્થાનિક સ્તરે જ રોજગારી પૂરી પાડવા માટે કયા પ્રકારના ગૃહ ઉદ્યોગો અને એગ્રી-સ્ટાર્ટઅપ્સ મદદરૂપ થઈ શકે તે અંગેનો ખાસ સર્વે અને આર્ટિકલ.</p>
-                    <a href="#" class="read-btn">પૂરો લેખ વાંચો</a>
-                </div>
-            </div>
-
-            <!-- કાર્ડ ૩ -->
-            <div class="report-card" style="border-top-color: var(--gold-accent);">
-                <span class="report-tag">કૃષિ રિસર્ચ</span>
-                <div class="report-body">
-                    <h3>આધુનિક જૈવિક ખેતી: એક સચોટ માર્ગદર્શિકા</h3>
-                    <div class="report-date">માર્ચ ૨૦૨૬</div>
-                    <p>ઓછા ખર્ચે અને કુદરતી સંસાધનોના યોગ્ય ઉપયોગથી જમીનની ફળદ્રુપતા કેવી રીતે વધારવી, અને કલ્યાણકારી કૃષિ ઉત્પાદન કેવી રીતે મેળવવું તેનું રિસર્ચ પેપર.</p>
-                    <a href="#" class="read-btn">રિસર્ચ પેપર જુઓ</a>
-                </div>
-            </div>
-
+        <div class="card">
+            <h3>અમે શું કરીએ છીએ?</h3>
+            <p>અમે પ્રકૃતિને અનુકૂળ ટકાઉ ખેતી પદ્ધતિઓ પ્રોત્સાહિત કરીએ છીએ અને શુદ્ધ, તેમજ ઉચ્ચ ગુણવત્તાયુક્ત ડેરી ઉત્પાદનો સીધા ગ્રાહકો સુધી પહોંચાડીએ છીએ. આ સાથે, ગ્રામીણ અર્થતંત્ર, પશુપાલકો અને ખેડૂતોના હકો, રોજગારી અને ડેરી સેક્ટરમાં પારદર્શિતા લાવવા માટે અમે સતત સંશોધન (Research) કરીએ છીએ અને તેના સચોટ અહેવાલો અને આંકડાઓ સમાજ સામે મૂકીએ છીએ.</p>
         </div>
-
     </main>
-
-    <!-- ફૂટર -->
-    <footer>
-        <p>&copy; 2026 xspace. સર્વાધિકાર સુરક્ષિત.</p>
-    </footer>
-
-    <!-- ગૂગલ ટ્રાન્સલેટ સ્ક્રિપ્ટ લિંક -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'gu', 
-                includedLanguages: 'gu,en,hi', 
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
